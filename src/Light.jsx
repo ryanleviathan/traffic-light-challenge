@@ -15,7 +15,9 @@ export default class Light extends Component {
 
   // function that follows traffic light conventions
   onSystemicClick = () => {
-    this.setState({ light: fetchLights() })
+    if(switch(this.light) === 0) this.setState({ light: fetchLights(2) })
+    if(switch(this.light) === 2) this.setState({ light: fetchLights(1) })
+    if(switch(this.light) === 1) this.setState({ light: fetchLights(0) })
   }
 
   render(){
