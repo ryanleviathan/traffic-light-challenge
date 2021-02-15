@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles.css";
-
-import fetchLight from "./fetch-light";
+import Light from "./Light";
 
 export default function App() {
-  return <div />;
+  return <Light />;
 }
