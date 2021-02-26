@@ -1,7 +1,7 @@
 export function fetchLight() {
   return new Promise((resolve, reject) => {
     switch (Math.floor(Math.random() * 3)) {
-      case 0:
+      default: case 0:
         resolve("red");
         break;
       case 1:
@@ -17,7 +17,7 @@ export function fetchLight() {
 export function fetchNonRandomLight(color) {
   return new Promise((resolve, reject) => {
     switch(color) {
-      case 'yellow':
+      default: case 'yellow':
         resolve("red");
         break;
       case 'green':
